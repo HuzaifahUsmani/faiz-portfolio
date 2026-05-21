@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Faiz Ibn-e-Tanveer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-page{padding:120px 0 80px}
+        .gallery-page-header{text-align:center;margin-bottom:48px}
+        .gallery-page-header .label{margin-bottom:4px}
+        .gallery-masonry{columns:3;column-gap:14px}
+        .gallery-masonry a{display:block;margin-bottom:14px;break-inside:avoid;border-radius:4px;overflow:hidden;position:relative}
+        .gallery-masonry img{width:100%;display:block;transition:transform .5s}
+        .gallery-masonry a:hover img{transform:scale(1.04)}
+        .gallery-masonry a::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,0);transition:background .3s}
+        .gallery-masonry a:hover::after{background:rgba(0,0,0,.25)}
+        .back-link{display:inline-flex;align-items:center;gap:8px;color:var(--gold);font-size:12px;letter-spacing:1.5px;font-weight:500;margin-bottom:20px;transition:opacity .3s}
+        .back-link:hover{opacity:.7}
+        @media(max-width:768px){.gallery-masonry{columns:2}}
+        @media(max-width:480px){.gallery-masonry{columns:1}}
+    </style>
+</head>
+<body>
+    <nav class="navbar scrolled">
+        <a href="index.html" class="logo">FIT PORTFOLIO</a>
+        <a href="index.html#contact" class="btn-book-nav">BOOK A SHOOT</a>
+    </nav>
+
+    <section class="gallery-page">
+        <div class="container">
+            <a href="index.html#portfolio" class="back-link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                BACK TO HOME
+            </a>
+            <div class="gallery-page-header">
+                <span class="label">COMPLETE COLLECTION</span>
+                <h2 class="title-script">All Works</h2>
+            </div>
+            <div class="gallery-masonry">
+                <a href="#"><img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=500&h=650&fit=crop" alt="Outdoor portrait"></a>
+                <a href="#"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500&h=400&fit=crop" alt="Fashion portrait"></a>
+                <a href="#"><img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=500&h=700&fit=crop" alt="Fashion shoot"></a>
+                <a href="#"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=500&h=500&fit=crop" alt="Creative portrait"></a>
+                <a href="#"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&h=600&fit=crop" alt="Portrait"></a>
+                <a href="#"><img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=500&h=450&fit=crop" alt="Artistic portrait"></a>
+                <a href="#"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=700&fit=crop" alt="Fashion"></a>
+                <a href="#"><img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500&h=500&fit=crop" alt="Portrait"></a>
+                <a href="#"><img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=500&h=650&fit=crop" alt="Fashion"></a>
+                <a href="#"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500&h=400&fit=crop" alt="Portrait"></a>
+                <a href="#"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&h=600&fit=crop" alt="Portrait"></a>
+                <a href="#"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop" alt="Portrait"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 FAIZ IBN E TANVEER. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>
